@@ -1,6 +1,6 @@
 # Ejercicio de Diseño - Vehículos
 
-[![Build Status](https://travis-ci.com/uqbar-project/eg-vehiculos-kotlin.svg?branch=master)](https://travis-ci.org/uqbar-project/eg-vehiculos-kotlin) [![coverage](https://codecov.io/gh/uqbar-project/eg-vehiculos-kotlin/branch/master/graph/badge.svg)](https://codecov.io/gh/uqbar-project/eg-vehiculos-kotlin/branch/master/graph/badge.svg) [![BCH compliance](https://bettercodehub.com/edge/badge/uqbar-project/eg-vehiculos-kotlin?branch=master)](https://bettercodehub.com/)
+[![Build Status](https://travis-ci.com/uqbar-project/eg-vehiculos-kotlin.svg?branch=master)](https://travis-ci.com/uqbar-project/eg-vehiculos-kotlin) [![coverage](https://codecov.io/gh/uqbar-project/eg-vehiculos-kotlin/branch/master/graph/badge.svg)](https://codecov.io/gh/uqbar-project/eg-vehiculos-kotlin/branch/master/graph/badge.svg) [![BCH compliance](https://bettercodehub.com/edge/badge/uqbar-project/eg-vehiculos-kotlin?branch=master)](https://bettercodehub.com/)
 
 ![image](./images/vehicles.png)
 
