@@ -140,9 +140,8 @@ Estaremos utilizando [kotest](https://kotest.io/) que tiene [muchos estilos con 
 en particular a nosotros nos gustó **DescribeSpec** que tiene una sintaxis bastante similar a los describes que viste en Algoritmos 1.
 
 ```kt
-class VehiculoSpec : DescribeSpec({   // <-- definimos una clase `VehiculoSpec` que hereda de la clase `DescribeSpec` 
-  
-  
+class VehiculoSpec : DescribeSpec({
+   // <-- definimos una clase `VehiculoSpec` que hereda de la clase `DescribeSpec` 
 ```
 
 Para testear una excepción, utilizamos el matcher shouldThrow que parametriza el tipo de la excepción esperada
