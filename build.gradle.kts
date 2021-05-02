@@ -51,3 +51,9 @@ tasks.jacocoTestReport {
         html.isEnabled = false
     }
 }
+
+tasks.register("runOnGitHub") {
+    dependsOn("jacocoTestReport")
+    group = "custom"
+    description = "$ ./gradlew runOnGitHub # runs on GitHub Action"
+}
