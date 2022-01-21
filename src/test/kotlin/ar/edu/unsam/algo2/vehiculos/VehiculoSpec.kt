@@ -1,3 +1,5 @@
+package ar.edu.unsam.algo2.vehiculos
+
 import io.kotest.assertions.throwables.shouldThrow
 import io.kotest.core.spec.IsolationMode
 import io.kotest.core.spec.style.DescribeSpec

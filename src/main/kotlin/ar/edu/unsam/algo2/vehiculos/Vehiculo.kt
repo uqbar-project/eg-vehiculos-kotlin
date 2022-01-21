@@ -1,3 +1,5 @@
+package ar.edu.unsam.algo2.vehiculos
+
 interface Vehiculo {
     fun avanzar()
     fun chocar(vehiculo: Vehiculo) {
