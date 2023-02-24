@@ -1,7 +1,7 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    kotlin("jvm") version "1.6.10"
+    kotlin("jvm") version "1.8.10"
     jacoco
 }
 
@@ -12,7 +12,7 @@ repositories {
     mavenCentral()
 }
 
-val kotestVersion = "5.1.0"
+val kotestVersion = "5.5.5"
 
 dependencies {
     implementation(kotlin("stdlib"))
@@ -24,7 +24,7 @@ dependencies {
 tasks.withType<KotlinCompile> {
     kotlinOptions {
         freeCompilerArgs = listOf("-Xjsr305=strict")
-        jvmTarget = "14"
+        jvmTarget = "17"
     }
 }
 
