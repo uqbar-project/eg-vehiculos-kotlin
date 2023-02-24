@@ -7,7 +7,7 @@
 ## Entorno
 
 - IntelliJ con el [plugin de Kotest](https://plugins.jetbrains.com/plugin/14080-kotest)
-- JDK 14
+- JDK 17
 
 ## Dominio
 
