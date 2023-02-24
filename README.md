@@ -110,29 +110,12 @@ Otra variante podría haber sido definir una constante no asociada al vehículo,
 ### Configuración del proyecto en gradle
 
 El ejemplo está utilizando gradle como manejador de dependencias, en lugar de confiar en los archivos propios de
-IntelliJ. Para poder activar las herramientas de testeo unitario, debemos tener esta definición del archivo
-`build.gradle.kts` del proyecto:
+IntelliJ. Para poder activar las herramientas de testeo unitario, debemos tener algunas definiciones en el archivo
+[`build.gradle.kts`](./build.gradle.kts) del proyecto, donde digamos:
 
-```gradle
-dependencies {
-    implementation(kotlin("stdlib"))
-    testImplementation("io.kotest:kotest-runner-junit5:$kotestVersion")
-    testImplementation("io.kotest:kotest-assertions-core:$kotestVersion")
-    testImplementation("io.kotest:kotest-runner-junit5:$kotestVersion")
-}
-
-tasks.withType<KotlinCompile> {
-    kotlinOptions {
-        freeCompilerArgs = listOf("-Xjsr305=strict")
-        jvmTarget = "14"
-    }
-}
-
-tasks.withType<Test> {
-    useJUnitPlatform()
-}
-```
-
+- que vamos a utilizar Kotest como framework de testeo unitario, incluyendo la versión específica que al 2023 es la 5.5.5
+- también con qué versión de Java queremos trabajar (al 2023 es la JDK 17)
+- mientras que el plugin JaCoCo (Java Code Coverage) permite generar un informe para que codecov lo publique
 
 ### Testeo unitario con kotest
 
