@@ -17,15 +17,15 @@ class VehiculoSpec : DescribeSpec({
             auto.avanzar()
             auto.kilometros shouldBe 40
         }
-        it("avanza una segunda vez y recorre la misma cantidad de kilómetros") {
+        it("testeamos nuevamente que avanza, pero lo que pasó en el test anterior no produce efecto, por lo tanto la distancia es la misma") {
             auto.avanzar()
             auto.kilometros shouldBe 40
         }
         it("no puede chocar con un avion") {
-            shouldThrow<RuntimeException> { -> auto.chocar(Avion()) }
+            shouldThrow<RuntimeException> { auto.chocar(Avion()) }
         }
         it("si choca con otro auto quedan chocados") {
-            val otroAuto : Auto = Auto()
+            val otroAuto = Auto()
             auto.chocar(otroAuto)
             auto.chocado() shouldBe true
             otroAuto.chocado() shouldBe true

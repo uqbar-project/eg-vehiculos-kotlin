@@ -4,11 +4,6 @@
 
 ![image](./images/vehicles.png)
 
-## Entorno
-
-- IntelliJ con el [plugin de Kotest](https://plugins.jetbrains.com/plugin/14080-kotest)
-- JDK 17
-
 ## Dominio
 
 Dados un avión y un automóvil, implementar el siguiente comportamiento:
@@ -56,9 +51,7 @@ class Avion : Vehiculo {
         avances++
     }
 
-    override fun chocado(): Boolean {
-        return false
-    }
+    override fun chocado(): Boolean = false
 
     override fun doChocar() {
         throw RuntimeException("Imposible chocar con un avion")
@@ -113,8 +106,8 @@ El ejemplo está utilizando gradle como manejador de dependencias, en lugar de c
 IntelliJ. Para poder activar las herramientas de testeo unitario, debemos tener algunas definiciones en el archivo
 [`build.gradle.kts`](./build.gradle.kts) del proyecto, donde digamos:
 
-- que vamos a utilizar Kotest como framework de testeo unitario, incluyendo la versión específica que al 2023 es la 5.5.5
-- también con qué versión de Java queremos trabajar (al 2023 es la JDK 17)
+- que vamos a utilizar Kotest como framework de testeo unitario, incluyendo la versión específica
+- también con qué versión de Java queremos trabajar
 - mientras que el plugin JaCoCo (Java Code Coverage) permite generar un informe para que codecov lo publique
 
 ### Testeo unitario con kotest

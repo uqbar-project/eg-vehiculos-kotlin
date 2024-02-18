@@ -41,9 +41,7 @@ class Avion : Vehiculo {
         avances++
     }
 
-    override fun chocado(): Boolean {
-        return false
-    }
+    override fun chocado(): Boolean = false
 
     override fun doChocar() {
         throw RuntimeException("Imposible chocar con un avion")
